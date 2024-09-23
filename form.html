@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>форма</title>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосунків</h1>
+    <h2>Лабораторна робота №1 </h2>
+    <h2>Виконала Чорномаз Уляна</h2>
+    <a href="1.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>
+        Необхідно розробити форму для введення інформації про фільм до БД фільмів. Необхідно заповнити наступні дані:
+
+
+    </p>
+    <ul>
+        <li>
+            дані про фільм, включають назву фільму, жанр(вибирається зі списку), дату виходу на екрани, опис фільму, картинку з афішою;
+        </li>
+        <li>
+            дані про режисера, включають ПІБ, дату народження, біографію, посилання на веб-сайт.
+        </li>
+
+    </ul>
+
+    <form action="" method="POST">
+		<fieldset>
+			<legend> Фільм:</legend>
+
+			<label> Назва:
+				<input id="movie_name" type="text">
+			</label>
+
+			<label> Жанр:
+				<select>
+					<option>Романтика</option>
+					<option>Комедія</option>
+					<option>Драма</option>
+					<option>Мелодрама</option>
+					<option>Трилер</option>
+					<option>Пригодницький</option>
+					<option>Детектив</option>
+					<option>Мюзикл</option>
+					<option>Фантастика</option>
+					<option>Документальний</option>
+					
+				</select>
+			</label>
+            <label>Дата виходу на екрани:</label>
+            <input id="date"  type="date"><br><br>
+
+            <label >Опис фільму:</label><br>
+            <textarea id="description"  rows="4" cols="50"></textarea><br><br>
+
+            <label >Картинка з афішою:</label>
+            <input id="poster" type="file" ><br><br>
+
+			
+
+		</fieldset>
+        <fieldset>
+            <legend>Дані про режисера</legend>
+
+            <br>
+            <label>ПІБ режисера:</label>
+            <input id="directorname"  type="text" >
+
+            
+            <label >Дата народження режисера:</label>
+            <input id="birthdate" type="date" ><br><br>
+
+            
+            <label >Біографія режисера:</label><br>
+            <textarea id="biography"  rows="4" cols="50"></textarea><br><br>
+
+            
+            <label >Посилання на веб-сайт:</label>
+            <input id="website"  type="url" ><br><br>
+        </fieldset>
+
+        <!-- Кнопка відправки форми -->
+        <input type="submit" value="Надіслати">
+    </form>
+
+</body>
+</html>
+
+
+
